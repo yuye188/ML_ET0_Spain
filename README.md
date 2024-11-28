@@ -1,10 +1,20 @@
-# Machine learning approaches for reference evapotranspiration estimation and forecasting: A multi-scale perspective in Spain  **(Data and Code)**  
+# ML and TL approaches for ET0 estimation and forecasting in Spain  **(Data and Code)**  
 
 ## Yu Ye,Aurora González-Vidal,Miguel A. Zamora-Izquierdo,Antonio F. Skarmeta
 #### *Department of Information and Communication Engineering, University of Murcia, Murcia, 30100, Spain*
 
 The structure of this repository is organized as follows:
 * ```all data murcia```: Real meteorological and ET0 data in the Region of Murcia, obtained from http://siam.imida.es/.
-* ```forecastTest```: Forecast meterological data in the Region of Murcia, obtained from https://www.weatherbit.io/ and https://www.visualcrossing.com/.
-* ```siar```: Real meteorological and ET0 data in Spain, obtained from https://servicio.mapa.gob.es/websiar/SeleccionParametrosMap.aspx?dst=1.
-* ```ET0.ipynb```: The code to develop the experiment. The output of each cell is kept and all seeds are set to 123 for reproducibility.
+* ```all data siar```: Real meteorological and ET0 data in Spain, obtained from https://servicio.mapa.gob.es/websiar/AltaUsuario.aspx?dst=3.
+* ```forecastMurcia```: Forecast meterological data in the Region of Murcia, obtained from https://www.weatherbit.io/.
+* ```forecastSiar```: Forecast meterological data in Spain, obtained from https://open-meteo.com/.
+* ```createStandarMLmodels.ipynb```: The code to create the standard ML models (RF, SVR and MLP).
+* ```createLSTMmodelsForTL.ipynb```: The code to create the TL models (LSTM).
+* ```transferLearningCompareTLNoTL.py```: The code to get results from models that use TL or not.
+* ```tlScriptCompareTLNoTL.bat```: Script to call the transferLearningCompareTLNoTL.py.
+* ```plots.ipynb```: Notebook to create the figures.
+* ```getSIARData.ipynb```: Notebook to download data from SIAR.
+* ```<stationcode>M*.keras```: LSTM models trained from `<stationcode>`.
+* ```finalModels<stationcode>NO-TL.pkl```: Standard models trained from `<stationcode>`.
+* ```all_medidas<stationcode>.xlsx```: Complete local results of the station `<stationcode>`.
+* ```all_scalers<stationcode>.pkl```: Scales for the data from `<stationcode>`.
