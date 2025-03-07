@@ -1,4 +1,4 @@
-# ML and TL approaches for ET0 estimation and forecasting in Spain  **(Data and Code)**  
+# Transfer and Deep learning models for daily reference evapotranspiration estimation and forecasting in Spain from local to national scale  **(Data and Code)**  
 
 ## Yu Ye,Aurora González-Vidal,Miguel A. Zamora-Izquierdo,Antonio F. Skarmeta
 #### *Department of Information and Communication Engineering, University of Murcia, Murcia, 30100, Spain*
